@@ -12,5 +12,6 @@ RUN apk add --update \
 EXPOSE 445/tcp
 #ENTRYPOINT ["smbd", "--foreground", "--log-stdout", "--no-process-group"]
 #CMD []
+ADD entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["smbd"]
