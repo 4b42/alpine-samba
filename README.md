@@ -80,7 +80,12 @@ posix-style ACLs.:
 ```
 
 ## Running
-
+```
+mkdir /usr/src/docker
+cd /usr/src/docker
+git clone https://github.com/4b42/alpine-samba.git
+docker build -t alpine-samba alpine-samba/samba/
+```
 Add/update the `-v` volumes below to match the shares defiend in your
 `smb.conf` file and run:
 
